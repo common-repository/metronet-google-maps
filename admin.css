@@ -1,0 +1,239 @@
+/* Main wrapper */
+.maps-page-wrap * {
+	font-family: sans-serif;
+}
+
+.maps-page-wrap {
+	position: relative;
+}
+
+.maps-page-wrap h2 {
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+	font-weight: normal;
+	font-size: 23px;
+	margin-left: 40px;
+	padding-top: 25px;
+	margin-top: 0px;
+}
+
+.maps-page-wrap .postbox h3 {
+	margin: 0px;
+	font-family: "Georgia";
+	height: 30px;
+	line-height: 30px;
+	padding-left: 7px;
+	cursor: default;
+}
+
+.maps-page-wrap .icon32 {
+	margin: 0px;
+	position: absolute;
+	top: 18px;
+}
+
+/* Global postbox styles */
+.postbox {
+	border-bottom: none;
+	cursor: default;
+}
+.maps-page-wrap .postbox .inner-content {
+	background-color: #F9F9F9;
+}
+.maps-page-wrap .postbox .inner-content .row {
+	padding: 7px;
+	border-bottom: 1px solid #DFDFDF;
+}
+.maps-page-wrap .postbox .inner-content .row a {
+	display: block;
+	margin-top: 5px;
+}
+.maps-page-wrap .postbox .alternate {
+	background-color: #FCFCFC;
+}
+
+/* Add/Edit Maps */
+#edit-maps-wrapper {
+	margin-top: 20px;
+	float: left;
+	width: 55%;
+	margin-right: 2.5%;
+}
+
+#new-map {
+	margin-top: 20px;
+	display: none;
+}
+
+#the-markers {
+	margin-top: 20px;
+}
+
+.markers-row {
+	border-top: 1px solid #eee;
+	padding: 7px;
+	
+}
+.markers-row:last-child {
+	border-bottom: 1px solid #eee;
+}
+.markers-row span, #current-maps .row span {
+	float: left;
+	display: block;
+	line-height: 23px;
+}
+.markers-row button, button.edit-map, button.get-shortcode, div.the-shortcode {
+	float: right;
+}
+div.the-shortcode {
+	line-height: 23px;
+	width: 95px;
+	text-align: center;
+}
+
+/* Add/Edit Markers */
+
+#edit-marker-wrapper {
+	margin-top: 20px;
+	float: left; 
+	width: 40%;
+	margin-right: 2.5%;
+	display: none;
+}
+#find-coordinates-wrapper {
+	display: none;
+}
+
+#find-coordinates-help .row,
+#find-coordinates-wrapper .row {
+	background-color: #eee;
+}
+
+.maps-page-wrap .postbox .inner-content #find-coordinates-help a {
+	display: inline;
+}
+
+#new-marker .loading  {
+	float: right;
+	margin-right: 25%;
+	margin-top: 3px;
+}
+#new-marker #uploaded-image-wrapper img {
+	margin-top: 10px;
+}
+#uploaded-image-wrapper {
+	cursor: pointer;
+}
+
+#uploaded-image-wrapper img {
+	max-height:100%;
+	max-width:100%;
+}
+
+#wp-marker_content-wrap {
+	margin-top: 30px;
+}
+
+.maps-page-wrap .postbox .inner-content .row #wp-marker_content-wrap a {
+	margin-top: 0px;
+	display: block;
+}
+
+.maps-page-wrap .postbox .inner-content .row #wp-marker_content-wrap a.insert-media {
+	width: 93px;
+}
+.delete-marker, .delete-map {
+	float: right;
+	height: 20px;
+	width: 15px;
+	line-height: 20px;
+	margin-left: 5px;
+	cursor: pointer;
+	text-align: center;
+	margin-top: 2px;
+}
+.delete-marker:hover, .delete-map:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+/* Button/input styles */
+input[type=text], #markers-wrap {
+	width: 60%;
+	float: left;
+}
+
+.map-button {
+	border-color: #BBBBBB;
+	color: #464646;
+	background: url("images/white-grad.png") repeat-x scroll left top #F2F2F2;
+	text-shadow: 0 1px 0 #FFFFFF;
+	-moz-box-sizing: content-box;
+	border-radius: 11px 11px 11px 11px;
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+	font-size: 12px !important;
+	line-height: 13px;
+	padding: 3px 8px;
+	text-decoration: none;
+}
+.map-button:active {
+    background: url("images/white-grad-active.png") repeat-x scroll left top #EEEEEE;
+}
+
+.map-button:hover {
+	border-color: #666666;
+	color: #000000;
+}
+.disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+.disabled:hover {
+	border: 1px solid #bbb;
+	color: #464646;
+}
+.disabled:active {
+	background: url("images/white-grad.png") repeat-x scroll left top #F2F2F2;
+}
+
+/* Globals */
+.desc {
+	font-weight: normal;
+	font-size: 10px;
+}
+
+label {
+	width: 35%;
+	float: left;
+	cursor: default;
+	padding-top: 6px;
+	font-weight: bold;
+}
+
+.clr {
+	clear: both;
+}
+
+.loading {
+	width: 16px;
+	height: 16px;
+	display: none;
+	background-image: url(images/loader.gif);
+}
+.required, .error {
+	color: #ff0000;
+}
+
+/* Overwriting some TinyMCE styles */
+#new-marker .wp_themeSkin .mceStatusbar,
+#new-marker #marker_content_strikethrough,
+.maps-page-wrap .postbox .inner-content .row #wp-marker_content-wrap .wp-switch-editor,
+.maps-page-wrap .postbox .inner-content .row #wp-marker_content-wrap #marker_content_fullscreen{
+	display: none;
+}
+
+.maps-page-wrap .postbox .inner-content .row #wp-marker_content-wrap p {
+	margin: 0px;
+	margin-bottom: 5px;
+}
